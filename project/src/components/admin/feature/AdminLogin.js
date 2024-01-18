@@ -1,8 +1,13 @@
 import React from 'react'
+import ProductSales from '../shared/ProductSales'
+
 
 const AdminLogin = () => {
   return (
-    <div>AdminLogin</div>
+  <>
+  <ProductSales/>
+  </>
+  
   )
 }
 

@@ -8,10 +8,13 @@ const Header = () => {
                     <h1 className="text-primary m-0"><i className="fa fa-utensils me-3"></i>Restoran</h1>
                      {/* <img src="img/logo.png" alt="Logo"/> */}
                 </a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                {/* <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span className="fa fa-bars"></span>
+                </button> */}
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false">
+                    <span class="fa fa-bars"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarCollapse">
+                <div className=" navbar-collapse " id="navbarCollapse">
                     <div className="navbar-nav ms-auto py-0 pe-4">
                         <a href="index.html" className="nav-item nav-link active">Home</a>
                         <a href="about.html" className="nav-item nav-link">About</a>
