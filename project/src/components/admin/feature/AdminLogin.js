@@ -7,7 +7,7 @@ const AdminLogin = () => {
   return (
   <>
 
-  <ProductSales/>
+  
   
   </>
   
