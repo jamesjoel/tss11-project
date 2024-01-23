@@ -1,6 +1,8 @@
 import React from 'react'
 
 const Menu = () => {
+    const breakFasts = ['Item 1', 'Item 2', 'Item 3','Item 4', 'Item 5', 'Item 6','Item 7', 'Item 9'];
+
   return (
     <>
      <div className="container-xxl py-5">
@@ -42,7 +44,9 @@ const Menu = () => {
                     <div className="tab-content">
                         <div id="tab-1" className="tab-pane fade show p-0 active">
                             <div className="row g-4">
-                                <div className="col-lg-6">
+                      
+                            {breakFasts.map((item, index) => (
+                                <div key={index} className="col-lg-6">
                                     <div className="d-flex align-items-center">
                                         <img className="flex-shrink-0 img-fluid rounded" src="/assets/img/menu-1.jpg" alt="" style={{width: "80px"}}/>
                                         <div className="w-100 d-flex flex-column text-start ps-4">
@@ -54,7 +58,8 @@ const Menu = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-6">
+                                ))}
+                                {/* <div className="col-lg-6">
                                     <div className="d-flex align-items-center">
                                         <img className="flex-shrink-0 img-fluid rounded" src="/assets/img/menu-2.jpg" alt="" style={{width: "80px"}}/>
                                         <div className="w-100 d-flex flex-column text-start ps-4">
@@ -137,7 +142,7 @@ const Menu = () => {
                                             <small className="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div id="tab-2" className="tab-pane fade show p-0">

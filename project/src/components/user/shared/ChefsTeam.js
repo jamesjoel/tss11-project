@@ -1,6 +1,7 @@
 import React from 'react'
 
 const ChefsTeam = () => {
+    const chef = ['Item 1', 'Item 2', 'Item 3','Item 4']; 
   return (
     <>
     <div className="container-xxl pt-5 pb-3">
@@ -10,7 +11,8 @@ const ChefsTeam = () => {
                     <h1 className="mb-5">Our Master Chefs</h1>
                 </div>
                 <div className="row g-4">
-                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                {chef.map((item, index) => (
+                    <div key={index} className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div className="team-item text-center rounded overflow-hidden">
                             <div className="rounded-circle overflow-hidden m-4">
                                 <img className="img-fluid" src="/assets/img/team-1.jpg" alt=""/>
@@ -24,7 +26,8 @@ const ChefsTeam = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+ ))}
+                    {/* <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div className="team-item text-center rounded overflow-hidden">
                             <div className="rounded-circle overflow-hidden m-4">
                                 <img className="img-fluid" src="/assets/img/team-2.jpg" alt=""/>
@@ -65,7 +68,7 @@ const ChefsTeam = () => {
                                 <a className="btn btn-square btn-primary mx-1" href=""><i className="fab fa-instagram"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
