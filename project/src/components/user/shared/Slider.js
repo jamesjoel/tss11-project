@@ -16,7 +16,7 @@ const Slider = () => {
                            <a href="" className="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
                        </div>
                        <div className="col-lg-6 text-center text-lg-end overflow-hidden">
-                           <img className="img-fluid" src="/assets/img/hero.png" alt=""/>
+                           {/* <img className="img-fluid" src="/assets/img/hero.png" alt=""/> */}
                        </div>
                    </div>
                </div>
