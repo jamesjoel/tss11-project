@@ -1,6 +1,9 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+
 
 const Header = () => {
+
+
   return (
     <>
     
@@ -52,8 +55,10 @@ const Header = () => {
         </div>
     </nav>
 </header>
-
-<aside className="left-sidebar" data-sidebarbg="skin6">
+ {
+    localStorage.getItem("admin-token")?
+    <>
+    <aside className="left-sidebar" data-sidebarbg="skin6">
             
             <div className="scroll-sidebar">
                 {/* <!-- Sidebar navigation--> */}
@@ -120,7 +125,10 @@ const Header = () => {
                 
             </div>
             
-        </aside>
+ </aside>
+    </> :""
+ }
+
 
 </>
  
