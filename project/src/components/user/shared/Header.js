@@ -17,23 +17,21 @@ const Header = () => {
                 </button>
                 <div className=" navbar-collapse " id="navbarCollapse">
                     <div className="navbar-nav ms-auto py-0 pe-4">
-                        <NavLink to="index.html" className="nav-item nav-link ">Home</NavLink>
-                        <NavLink to="about.html" className="nav-item nav-link">About</NavLink>
-                        <NavLink to="service.html" className="nav-item nav-link">Service</NavLink>
-                        <NavLink to="menu.html" className="nav-item nav-link">Menu</NavLink>
+                        <NavLink to="/home" className="nav-item nav-link ">Home</NavLink>
+                        <NavLink to="/about" className="nav-item nav-link">About</NavLink>
+                        <NavLink to="/menu" className="nav-item nav-link">Menu</NavLink>
                         <div className="nav-item dropdown">
-                            <NavLink to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</NavLink>
                             <div className="dropdown-menu m-0">
-                                <NavLink to="booking.html" className="dropdown-item">Booking</NavLink>
+                                <NavLink to="/booking" className="dropdown-item">Booking</NavLink>
                                 <NavLink to="team.html" className="dropdown-item">Our Team</NavLink>
-                                <NavLink to="testimonial.html" className="dropdown-item">Testimonial</NavLink>
+                                <NavLink to="/testimonial" className="dropdown-item">Testimonial</NavLink>
                             </div>
                         </div>
-                        <NavLink to="contact.html" className="nav-item nav-link">Contact</NavLink>
+                        <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
                         <NavLink to="/login" className="nav-item nav-link">Login</NavLink>
                         <NavLink to="/signup" className="nav-item nav-link">SignUp</NavLink>
                     </div>
-                    <NavLink to="" className="btn btn-primary py-2 px-4">Book A Table</NavLink>
+                    <NavLink to="/booktable" className="btn btn-primary py-2 px-4">Book A Table</NavLink>
                 </div>
             </nav>
     </>
