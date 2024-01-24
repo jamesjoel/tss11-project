@@ -31,11 +31,14 @@ const AllRoutes = () => {
 
           <Route path='admin' element={<AdminModule/>}>
             <Route path='' element={<AdminLogin/>}/>
-
+<<<<<<< HEAD
+           
+            
+=======
             <Route path='' element={<AdminProtectedModule/>}>
               
             </Route>
-
+>>>>>>> c42cdb4ae56928acc443794acf88bda0403049a2
           </Route>
         </Routes>
     </>

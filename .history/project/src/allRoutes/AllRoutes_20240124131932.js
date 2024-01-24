@@ -31,7 +31,10 @@ const AllRoutes = () => {
 
           <Route path='admin' element={<AdminModule/>}>
             <Route path='' element={<AdminLogin/>}/>
-
+<<<<<<< HEAD
+           
+            
+=======
             <Route path='' element={<AdminProtectedModule/>}>
               
             </Route>
