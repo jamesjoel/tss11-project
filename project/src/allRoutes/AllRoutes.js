@@ -4,8 +4,9 @@ import Home from '../components/user/feature/Home'
 import UserModule from '../modules/UserModule'
 import AdminModule from '../modules/AdminModule'
 import AdminLogin from '../components/admin/feature/AdminLogin'
-
-
+import Dashboard from '../components/admin/feature/AdminDashboard'
+import AdminMenu from '../components/admin/feature/AdminMenu'
+import AdminUsers from '../components/admin/feature/AdminUsers'
 const AllRoutes = () => {
   return (
     <>
@@ -17,6 +18,8 @@ const AllRoutes = () => {
 
           <Route path='/admin' element={<AdminModule/>}>
             <Route path='' element={<AdminLogin/>}/>
+           
+            
           </Route>
         </Routes>
     </>

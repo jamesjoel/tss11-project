@@ -61,10 +61,10 @@ const Header = () => {
                     <ul id="sidebarnav">
                         {/* <!-- User Profile--> */}
                         <li className="sidebar-item pt-2">
-                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="dashboard.html"
+                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="/dashboard"
                                 aria-expanded="false">
                                 <i className="far fa-clock" aria-hidden="true"></i>
-                                <span className="hide-menu">Dashboard</span>
+                                // <span className="hide-menu">Dashboard</span>
                             </a>
                         </li>
                         <li className="sidebar-item">
@@ -75,27 +75,27 @@ const Header = () => {
                             </a>
                         </li>
                         <li className="sidebar-item">
-                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="basic-table.html"
+                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="/menu"
                                 aria-expanded="false">
                                 <i className="fa fa-table" aria-hidden="true"></i>
-                                <span className="hide-menu">Basic Table</span>
+                                <span className="hide-menu">Menu</span>
                             </a>
                         </li>
                         <li className="sidebar-item">
-                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="fontawesome.html"
+                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="/users"
                                 aria-expanded="false">
                                 <i className="fa fa-font" aria-hidden="true"></i>
-                                <span className="hide-menu">Icon</span>
+                                <span className="hide-menu">Users</span>
                             </a>
                         </li>
                         <li className="sidebar-item">
-                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="map-google.html"
+                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="/logout"
                                 aria-expanded="false">
                                 <i className="fa fa-globe" aria-hidden="true"></i>
-                                <span className="hide-menu">Google Map</span>
+                                <span className="hide-menu">Logout</span>
                             </a>
                         </li>
-                        <li className="sidebar-item">
+                        {/* <li className="sidebar-item">
                             <a className="sidebar-link waves-effect waves-dark sidebar-link" href="blank.html"
                                 aria-expanded="false">
                                 <i className="fa fa-columns" aria-hidden="true"></i>
@@ -108,7 +108,7 @@ const Header = () => {
                                 <i className="fa fa-info-circle" aria-hidden="true"></i>
                                 <span className="hide-menu">Error 404</span>
                             </a>
-                        </li>
+                        </li> */}
                         <li className="text-center p-20 upgrade-btn">
                             <a href="https://www.wrappixel.com/templates/ampleadmin/"
                                 className="btn d-grid btn-danger text-white" target="_blank">
