@@ -4,6 +4,7 @@ import Home from '../components/user/feature/Home'
 import UserModule from '../modules/UserModule'
 import AdminModule from '../modules/AdminModule'
 import AdminLogin from '../components/admin/feature/AdminLogin'
+import AdminProtectedModule from '../modules/AdminProtectedModule'
 
 
 const AllRoutes = () => {
@@ -15,8 +16,11 @@ const AllRoutes = () => {
            
           </Route>
 
-          <Route path='/admin' element={<AdminModule/>}>
+          <Route path='admin' element={<AdminModule/>}>
             <Route path='' element={<AdminLogin/>}/>
+            <Route path='' element={<AdminProtectedModule/>}>
+              
+            </Route>
           </Route>
         </Routes>
     </>
