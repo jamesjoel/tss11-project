@@ -29,8 +29,8 @@ const AdminLogin = () => {
           </div>
           <div className="card-body">
             <div className="my-2">
-              <label htmlFor="">UserName/Email</label>
-              <input type="text" onChange={loginForm.handleChange} name='username'className={'form-control ' + (loginForm.errors.username&& loginForm.touched.username? "is-invalid" : "")} placeholder='Email Id' />
+              <label htmlFor="">User-Name</label>
+              <input type="text" onChange={loginForm.handleChange} name='username'className={'form-control ' + (loginForm.errors.username&& loginForm.touched.username? "is-invalid" : "")} placeholder='Username' />
               {
                 loginForm.errors.username&& loginForm.touched.username?<small className='text-danger'>{loginForm.errors.username}</small> :""
               }
