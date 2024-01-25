@@ -16,13 +16,6 @@ const AdminModule = () => {
      <Header/>
     <Outlet/>
     <Footer/>
-    
-       
-      
-       
-       
-        
-    
     </div>
     
     

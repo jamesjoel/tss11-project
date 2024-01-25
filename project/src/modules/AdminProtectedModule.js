@@ -3,14 +3,18 @@ import { useNavigate } from 'react-router-dom'
 import { Outlet } from 'react-router-dom'
 
 const AdminProtectedModule = () => {
-    let navigate = useNavigate()
-    useEffect(()=>{
-        if(! localStorage.getItem("admin-token")){
-            navigate("/")
-        }
-    },[])
+    // let navigate = useNavigate()
+    // useEffect(()=>{
+    //     if(! localStorage.getItem("admin-token")){
+    //         navigate("/")
+    //     }
+    // },[])
   return (
-    <Outlet/>
+    <>
+      <h1 className='text-dark'>wlle</h1>
+       <Outlet/>
+    </>
+   
   )
 }
 
