@@ -34,17 +34,17 @@ const Slider = () => {
             <div>
                 <Slide>
                     <div className="each-slide-effect">
-                        <div style={{ 'backgroundImage': `url(${images[0]})` }}>
+                        <div style={{ 'backgroundImage': `url(${images[0]})`,backgroundSize: "100% 100%" }}>
 
                         </div>
                     </div>
                     <div className="each-slide-effect">
-                        <div style={{ 'backgroundImage': `url(${images[1]})` }}>
+                        <div style={{ 'backgroundImage': `url(${images[1]})`,backgroundSize: "100% 100%" }}>
 
                         </div>
                     </div>
                     <div className="each-slide-effect">
-                        <div style={{ 'backgroundImage': `url(${images[2]})` }}>
+                        <div style={{ 'backgroundImage': `url(${images[2]})`,backgroundSize: "100% 100%" }}>
 
                         </div>
                     </div>
