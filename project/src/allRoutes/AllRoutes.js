@@ -4,6 +4,10 @@ import Home from "../components/user/feature/Home"
 import UserModule from '../modules/UserModule'
 import AdminModule from '../modules/AdminModule'
 import AdminLogin from '../components/admin/feature/AdminLogin'
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ac7c57ba9e7fec6ddb6490cc47078222d6a0610
 import AdminProtectedModule from '../modules/AdminProtectedModule'
 import Login from '../components/user/feature/Login'
 import Signup from '../components/user/feature/Signup'

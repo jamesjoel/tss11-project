@@ -69,7 +69,7 @@ const Header = () => {
                             <a className="sidebar-link waves-effect waves-dark sidebar-link" href="/dashboard"
                                 aria-expanded="false">
                                 <i className="far fa-clock" aria-hidden="true"></i>
-                                // <span className="hide-menu">Dashboard</span>
+                                 <span className="hide-menu">Dashboard</span>
                             </a>
                         </li>
                         <li className="sidebar-item">
