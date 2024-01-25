@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react'
-
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
 
@@ -55,8 +55,8 @@ const Header = () => {
         </div>
     </nav>
 </header>
- {
-    localStorage.getItem("admin-token")?
+ 
+
     <>
     <aside className="left-sidebar" data-sidebarbg="skin6">
             
@@ -66,40 +66,27 @@ const Header = () => {
                     <ul id="sidebarnav">
                         {/* <!-- User Profile--> */}
                         <li className="sidebar-item pt-2">
-                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="/dashboard"
+                            <NavLink className="sidebar-link waves-effect waves-dark sidebar-link" to="/admin/dashboard"
                                 aria-expanded="false">
                                 <i className="far fa-clock" aria-hidden="true"></i>
-                                // <span className="hide-menu">Dashboard</span>
-                            </a>
+                                 <span className="hide-menu">Dashboard</span>
+                            </NavLink>
                         </li>
-                        <li className="sidebar-item">
-                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="profile.html"
+                        <li className="sidebar-item pt-2">
+                            <NavLink className="sidebar-link waves-effect waves-dark sidebar-link" to="/admin/users"
                                 aria-expanded="false">
-                                <i className="fa fa-user" aria-hidden="true"></i>
-                                <span className="hide-menu">Profile</span>
-                            </a>
+                                <i className="far fa-clock" aria-hidden="true"></i>
+                                 <span className="hide-menu">Users</span>
+                            </NavLink>
                         </li>
-                        <li className="sidebar-item">
-                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="/menu"
+                        <li className="sidebar-item pt-2">
+                            <NavLink className="sidebar-link waves-effect waves-dark sidebar-link" to="/admin/menu"
                                 aria-expanded="false">
-                                <i className="fa fa-table" aria-hidden="true"></i>
-                                <span className="hide-menu">Menu</span>
-                            </a>
+                                <i className="far fa-clock" aria-hidden="true"></i>
+                                 <span className="hide-menu">Menu</span>
+                            </NavLink>
                         </li>
-                        <li className="sidebar-item">
-                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="/users"
-                                aria-expanded="false">
-                                <i className="fa fa-font" aria-hidden="true"></i>
-                                <span className="hide-menu">Users</span>
-                            </a>
-                        </li>
-                        <li className="sidebar-item">
-                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="/logout"
-                                aria-expanded="false">
-                                <i className="fa fa-globe" aria-hidden="true"></i>
-                                <span className="hide-menu">Logout</span>
-                            </a>
-                        </li>
+                        
                         {/* <li className="sidebar-item">
                             <a className="sidebar-link waves-effect waves-dark sidebar-link" href="blank.html"
                                 aria-expanded="false">
@@ -126,8 +113,8 @@ const Header = () => {
             </div>
             
  </aside>
-    </> :""
- }
+    </> 
+ 
 
 
 </>

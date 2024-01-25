@@ -2,7 +2,7 @@ import React from 'react'
 
 const AdminMenu = () => {
   return (
-    <div>AdminMenu</div>
+    <h1>Sourabhs</h1>
   )
 }
 
