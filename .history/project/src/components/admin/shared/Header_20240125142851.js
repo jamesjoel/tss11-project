@@ -73,7 +73,7 @@ const Header = () => {
                                 <i className="far fa-clock" aria-hidden="true"></i>
                                  <span className="hide-menu">Dashboard</span>
 
-                            
+                            </a>
 
                             </NavLink>
 
@@ -118,7 +118,7 @@ const Header = () => {
                 
             </div>
             
- </aside> :"" }
+ </aside>
     
  
 

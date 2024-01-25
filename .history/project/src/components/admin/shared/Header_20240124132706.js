@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react'
-import { NavLink } from 'react-router-dom'
+
 
 const Header = () => {
 
@@ -55,11 +55,9 @@ const Header = () => {
         </div>
     </nav>
 </header>
-
  {
     localStorage.getItem("admin-access")?
-
-    
+    <>
     <aside className="left-sidebar" data-sidebarbg="skin6">
             
             <div className="scroll-sidebar">
@@ -68,31 +66,40 @@ const Header = () => {
                     <ul id="sidebarnav">
                         {/* <!-- User Profile--> */}
                         <li className="sidebar-item pt-2">
-                            <NavLink className="sidebar-link waves-effect waves-dark sidebar-link" to="/admin/dashboard"
+                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="/dashboard"
                                 aria-expanded="false">
                                 <i className="far fa-clock" aria-hidden="true"></i>
                                  <span className="hide-menu">Dashboard</span>
-
-                            
-
-                            </NavLink>
-
+                            </a>
                         </li>
-                        <li className="sidebar-item pt-2">
-                            <NavLink className="sidebar-link waves-effect waves-dark sidebar-link" to="/admin/users"
+                        <li className="sidebar-item">
+                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="profile.html"
                                 aria-expanded="false">
-                                <i className="far fa-clock" aria-hidden="true"></i>
-                                 <span className="hide-menu">Users</span>
-                            </NavLink>
+                                <i className="fa fa-user" aria-hidden="true"></i>
+                                <span className="hide-menu">Profile</span>
+                            </a>
                         </li>
-                        <li className="sidebar-item pt-2">
-                            <NavLink className="sidebar-link waves-effect waves-dark sidebar-link" to="/admin/menu"
+                        <li className="sidebar-item">
+                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="/menu"
                                 aria-expanded="false">
-                                <i className="far fa-clock" aria-hidden="true"></i>
-                                 <span className="hide-menu">Menu</span>
-                            </NavLink>
+                                <i className="fa fa-table" aria-hidden="true"></i>
+                                <span className="hide-menu">Menu</span>
+                            </a>
                         </li>
-                        
+                        <li className="sidebar-item">
+                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="/users"
+                                aria-expanded="false">
+                                <i className="fa fa-font" aria-hidden="true"></i>
+                                <span className="hide-menu">Users</span>
+                            </a>
+                        </li>
+                        <li className="sidebar-item">
+                            <a className="sidebar-link waves-effect waves-dark sidebar-link" href="/logout"
+                                aria-expanded="false">
+                                <i className="fa fa-globe" aria-hidden="true"></i>
+                                <span className="hide-menu">Logout</span>
+                            </a>
+                        </li>
                         {/* <li className="sidebar-item">
                             <a className="sidebar-link waves-effect waves-dark sidebar-link" href="blank.html"
                                 aria-expanded="false">
@@ -118,9 +125,9 @@ const Header = () => {
                 
             </div>
             
- </aside> :"" }
-    
- 
+ </aside>
+    </> :""
+ }
 
 
 </>

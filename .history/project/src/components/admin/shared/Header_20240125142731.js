@@ -55,11 +55,14 @@ const Header = () => {
         </div>
     </nav>
 </header>
+<<<<<<< HEAD
+ 
 
+=======
  {
     localStorage.getItem("admin-access")?
 
-    
+    <>
     <aside className="left-sidebar" data-sidebarbg="skin6">
             
             <div className="scroll-sidebar">
@@ -72,11 +75,11 @@ const Header = () => {
                                 aria-expanded="false">
                                 <i className="far fa-clock" aria-hidden="true"></i>
                                  <span className="hide-menu">Dashboard</span>
-
-                            
-
+<<<<<<< HEAD
+                            </a>
+=======
                             </NavLink>
-
+>>>>>>> f06bc6e465fb9d1a1ba09cac6e75eb5b2ffe6324
                         </li>
                         <li className="sidebar-item pt-2">
                             <NavLink className="sidebar-link waves-effect waves-dark sidebar-link" to="/admin/users"
@@ -118,8 +121,8 @@ const Header = () => {
                 
             </div>
             
- </aside> :"" }
-    
+ </aside>
+    </> 
  
 
 
