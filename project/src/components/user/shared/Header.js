@@ -17,7 +17,7 @@ const Header = () => {
                 </button>
                 <div className=" navbar-collapse " id="navbarCollapse">
                     <div className="navbar-nav ms-auto py-0 pe-4">
-                        <NavLink to="/home" className="nav-item nav-link ">Home</NavLink>
+                        <NavLink to="/" className="nav-item nav-link ">Home</NavLink>
                         <NavLink to="/about" className="nav-item nav-link">About</NavLink>
                         <NavLink to="/menu" className="nav-item nav-link">Menu</NavLink>
                         <div className="nav-item dropdown">
